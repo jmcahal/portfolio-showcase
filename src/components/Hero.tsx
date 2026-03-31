@@ -1,6 +1,7 @@
 import { FileText, Linkedin, Github, Mail } from "lucide-react";
 import { profile } from "@/data/profile";
 import ScrollReveal from "@/components/ScrollReveal";
+import avatarSvg from "@/assets/cahal3.svg";
 
 const ctaLinks = [
   { href: profile.resumeUrl, icon: FileText, label: "Resume" },
@@ -11,8 +12,8 @@ const ctaLinks = [
 
 const Hero = () => (
   <section className="relative flex min-h-[85vh] items-end pb-24 pt-32">
-    <div className="mx-auto w-full max-w-5xl px-6">
-      <ScrollReveal>
+    <div className="mx-auto flex w-full max-w-5xl flex-col-reverse items-center gap-12 px-6 md:flex-row md:items-end md:justify-between">
+      <ScrollReveal className="flex-1">
         <p className="mb-4 font-display text-sm font-medium uppercase tracking-[0.25em] text-primary">
           {profile.tagline}
         </p>
@@ -36,6 +37,13 @@ const Hero = () => (
             </a>
           ))}
         </div>
+      </ScrollReveal>
+      <ScrollReveal className="shrink-0">
+        <img
+          src={avatarSvg}
+          alt={`${profile.name} avatar`}
+          className="h-52 w-52 rounded-full border-2 border-primary/30 object-cover shadow-lg shadow-primary/10 md:h-64 md:w-64"
+        />
       </ScrollReveal>
     </div>
   </section>

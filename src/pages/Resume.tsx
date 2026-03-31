@@ -37,25 +37,25 @@ const Resume = () => (
         James Michael Cahal
       </h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        Atlanta, GA &nbsp;·&nbsp; jmcahal@gmail.com &nbsp;·&nbsp; (770) 856-2365 &nbsp;·&nbsp;{" "}
-        <a href="https://linkedin.com/in/michaelcahal" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">LinkedIn</a> &nbsp;·&nbsp;{" "}
+        Atlanta, GA &nbsp;·&nbsp; michael.cahal@gmail.com &nbsp;·&nbsp; (678) 575-7916 &nbsp;·&nbsp;{" "}
+        <a href="https://linkedin.com/in/jmcahal" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">LinkedIn</a> &nbsp;·&nbsp;{" "}
         <a href="https://github.com/jmcahal" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">GitHub</a>
       </p>
 
       {/* Summary */}
       <SectionTitle>Summary</SectionTitle>
       <p className="text-sm leading-relaxed text-muted-foreground">
-        AI-focused product and technology professional with a unique blend of technical execution, strategic consulting, and cross-functional leadership. Currently building AI solutions in higher education while leading product-oriented consulting engagements. Passionate about translating complex AI capabilities into practical, user-centered products that drive measurable outcomes.
+        AI-focused product and technology professional specializing in the design and implementation of early-stage AI solutions and digital transformation initiatives. Experienced in identifying high-impact use cases, building functional prototypes, and enabling organizational adoption of emerging technologies. Combines full-stack engineering expertise with strategic insight to translate AI capabilities into practical, scalable solutions.
       </p>
 
       {/* Core Capabilities */}
       <SectionTitle>Core Capabilities</SectionTitle>
       <div className="grid gap-4 sm:grid-cols-2">
         {[
-          { title: "AI Strategy & Implementation", items: ["Generative AI (GPT, Claude, Gemini)", "RAG Architecture & Vector Search", "Prompt Engineering & LLM Evaluation", "AI Agent Design & Orchestration"] },
-          { title: "Product & Consulting", items: ["Product Strategy & Roadmapping", "Stakeholder Management", "Requirements Gathering & Analysis", "Go-to-Market Planning"] },
-          { title: "Technical Execution", items: ["React / TypeScript / Python", "Firebase / Supabase / SQL", "API Integration & Design", "Agile / Scrum Methodologies"] },
-          { title: "Leadership", items: ["Cross-Functional Team Leadership", "Executive Communication", "Change Management", "Mentoring & Talent Development"] },
+          { title: "AI Strategy & Prototyping", items: ["Generative AI (OpenAI, GPT-4)", "Retrieval-Augmented Generation (RAG)", "Embeddings & Vector Databases (Zilliz/Milvus)", "Copilot Studio"] },
+          { title: "Product & Consulting", items: ["AI Use Case Discovery", "Rapid Prototyping (0→1)", "Stakeholder Alignment", "Workflow Automation", "Digital Transformation"] },
+          { title: "Technical Execution", items: ["React, Node.js, Express", "REST APIs, Authentication (JWT)", "MySQL, Firestore", "Docker, AWS, CI/CD"] },
+          { title: "Leadership & Influence", items: ["Cross-functional Collaboration", "Change Management", "Technical Communication", "Team Leadership"] },
         ].map((group) => (
           <div key={group.title}>
             <h3 className="mb-1.5 text-sm font-semibold text-foreground">{group.title}</h3>
@@ -75,35 +75,35 @@ const Resume = () => (
       <SectionTitle>Professional Experience</SectionTitle>
       <div>
         <h3 className="text-base font-semibold text-foreground">
-          AI Product Manager &amp; Solutions Architect
+          Web Developer / AI Solutions Lead (0→1 AI Initiatives)
         </h3>
         <p className="text-sm text-muted-foreground">
-          Kennesaw State University · 2022 – Present
+          Kennesaw State University — Kennesaw, GA · Aug 2021 – Present
         </p>
         <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
           {[
-            "Lead AI strategy and implementation across university technology services, partnering with academic and administrative units to identify high-impact automation opportunities.",
-            "Architect and deploy RAG-based AI systems using Azure OpenAI, LangChain, and vector databases to provide context-aware responses from institutional knowledge bases.",
-            "Design and build AI-powered chatbots and virtual assistants using Microsoft Copilot Studio, reducing support ticket volume by 35% in pilot departments.",
-            "Develop custom AI applications using React, TypeScript, and Python, integrating with university APIs and databases to streamline workflows.",
-            "Create AI governance frameworks and usage policies, establishing responsible AI practices adopted across multiple departments.",
-            "Lead cross-functional teams of developers, designers, and subject matter experts through agile development cycles.",
+            "Designed and implemented AI-powered knowledge retrieval systems using OpenAI (GPT-4) and vector databases (Zilliz/Milvus), improving access to institutional information through natural language interfaces",
+            "Led early-stage AI prototyping efforts (0→1), rapidly building and testing solutions to evaluate feasibility, usability, and organizational fit",
+            "Developed and deployed chatbot workflows using Microsoft Copilot Studio, integrating custom logic to automate information access and support interactions",
+            "Identified and prioritized AI use cases across business processes, translating emerging capabilities into actionable solutions despite evolving organizational readiness",
+            "Acted as a bridge between technical teams and stakeholders, aligning AI initiatives with institutional goals and guiding adoption conversations",
+            "Spearheaded a university-wide web modernization effort, building reusable CMS components and scalable design systems",
+            "Built and deployed a Software Inventory platform (React, Node.js, MySQL) to modernize asset tracking and improve operational visibility",
           ].map((bullet) => (
-            <li key={bullet.slice(0, 30)} className="flex items-start gap-2">
+            <li key={bullet.slice(0, 40)} className="flex items-start gap-2">
               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
               {bullet}
             </li>
           ))}
         </ul>
 
-        <h4 className="mt-6 text-sm font-semibold text-foreground">Leadership &amp; Collaboration</h4>
+        <h4 className="mt-6 text-sm font-semibold text-foreground">Leadership &amp; Organizational Impact</h4>
         <ul className="mt-2 space-y-2 text-sm leading-relaxed text-muted-foreground">
           {[
-            "Serve as primary AI advisor to senior IT leadership, translating technical capabilities into strategic recommendations.",
-            "Facilitate AI literacy workshops and training sessions for faculty and staff, building organizational capacity for AI adoption.",
-            "Manage vendor relationships and evaluate emerging AI tools and platforms for institutional fit.",
+            "IT Workforce Engagement Captain: Collaborated with leadership to design and implement initiatives improving employee engagement and internal communication",
+            "Contributed to shaping innovation culture and AI readiness, helping introduce new technologies into a traditionally risk-averse environment",
           ].map((bullet) => (
-            <li key={bullet.slice(0, 30)} className="flex items-start gap-2">
+            <li key={bullet.slice(0, 40)} className="flex items-start gap-2">
               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
               {bullet}
             </li>
@@ -114,50 +114,65 @@ const Resume = () => (
       {/* Selected AI Projects */}
       <SectionTitle>Selected AI Projects</SectionTitle>
       <div className="space-y-6">
-        {[
-          {
-            name: "Nonprofit AI Hackathon Platform",
-            desc: "Designed and led a 48-hour AI hackathon connecting student developers with local nonprofits. Built the event platform in React and coordinated cross-functional teams to deliver working AI prototypes for real organizations.",
-          },
-          {
-            name: "RAG-Powered Knowledge Chatbot",
-            desc: "Architected a retrieval-augmented generation system using Azure OpenAI and LangChain to provide accurate, citation-backed answers from 10,000+ institutional documents. Reduced average query resolution time by 60%.",
-          },
-          {
-            name: "Copilot Studio Virtual Assistant",
-            desc: "Designed and deployed a Microsoft Copilot Studio-based assistant for IT service management, handling 500+ monthly interactions with 85% resolution rate without human escalation.",
-          },
-        ].map((project) => (
-          <div key={project.name}>
-            <h3 className="text-sm font-semibold text-foreground">{project.name}</h3>
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{project.desc}</p>
-          </div>
-        ))}
+        <div>
+          <h3 className="text-sm font-semibold text-foreground">AI Intake Automation for Nonprofit (BuildWithChrist.ai Hackathon)</h3>
+          <ul className="mt-2 space-y-2 text-sm leading-relaxed text-muted-foreground">
+            {[
+              "Designed and built a multimodal AI intake system for a Catholic Charities Adopt-a-Family program, enabling volunteers to collect and structure family data more efficiently",
+              "Implemented voice-based intake workflows using ElevenLabs, allowing real-time conversation with families in English and Spanish to reduce language barriers",
+              "Developed an intake interface using Lovable.dev that supports three input methods: live conversation, AI-assisted voice agent, and document/image uploads (PDF scanning)",
+              "Leveraged AI to extract, structure, and populate form data automatically, reducing manual entry and improving consistency of collected information",
+              "Applied rapid 0→1 product development in a constrained timeframe, iterating on user experience, intake flows, and AI interactions",
+              "Presented a live demo to peers and organizers, communicating technical implementation and real-world impact",
+            ].map((bullet) => (
+              <li key={bullet.slice(0, 40)} className="flex items-start gap-2">
+                <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
+                {bullet}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-sm font-semibold text-foreground">AI Knowledge Retrieval Chatbot (RAG System)</h3>
+          <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />Built a chatbot leveraging OpenAI and vector embeddings to retrieve and summarize domain-specific content</li>
+            <li className="flex items-start gap-2"><span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />Enabled natural language querying of structured and unstructured data sources</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-sm font-semibold text-foreground">AI Workflow Automation (Copilot Studio)</h3>
+          <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />Designed conversational workflows to automate internal support interactions</li>
+            <li className="flex items-start gap-2"><span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />Integrated custom logic to guide users through processes and reduce friction in information access</li>
+          </ul>
+        </div>
       </div>
 
       {/* Previous Experience */}
       <SectionTitle>Previous Experience</SectionTitle>
       <div className="space-y-4">
         <div>
-          <h3 className="text-sm font-semibold text-foreground">Data Science Fellow</h3>
-          <p className="text-sm text-muted-foreground">Springboard · 2021 – 2022</p>
+          <h3 className="text-sm font-semibold text-foreground">Software Engineering Fellow</h3>
+          <p className="text-sm text-muted-foreground">Springboard</p>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-foreground">Director of Bands &amp; Music Technology</h3>
-          <p className="text-sm text-muted-foreground">K-12 Education · 2008 – 2021</p>
+          <h3 className="text-sm font-semibold text-foreground">Director of Bands</h3>
+          <p className="text-sm text-muted-foreground">Marietta City Schools</p>
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+            Led a 300+ member organization and team of instructors, developing leadership, communication, and operational management skills transferable to technical and product environments.
+          </p>
         </div>
       </div>
 
       {/* Education & Certifications */}
       <SectionTitle>Education &amp; Certifications</SectionTitle>
       <ul className="space-y-2 text-sm text-muted-foreground">
-        <li>M.Ed. in Music Education — University of Georgia</li>
-        <li>B.M. in Music Performance — Kennesaw State University</li>
-        <li>Springboard Data Science Career Track Certificate</li>
-        <li>Microsoft Certified: Azure AI Fundamentals (AI-900)</li>
+        <li>Generative AI Leadership &amp; Strategy Specialization — Vanderbilt University</li>
+        <li>Software Engineering Certificate — Springboard</li>
+        <li>Master of Music Education — University of Georgia</li>
+        <li>Bachelor of Music Education — University of Georgia</li>
       </ul>
 
-      {/* Bottom spacer */}
       <div className="h-16" />
     </div>
   </div>

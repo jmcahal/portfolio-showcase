@@ -3,6 +3,7 @@ import { featuredProject } from "@/data/projects";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeading from "@/components/SectionHeading";
 import { Badge } from "@/components/ui/badge";
+import vaccineGameImg from "@/assets/vaccine-game.png";
 
 const FeaturedProject = () => {
   const project = featuredProject;
@@ -18,6 +19,11 @@ const FeaturedProject = () => {
           {/* Left column — 3/5 */}
           <div className="lg:col-span-3">
             <ScrollReveal>
+              <img
+                src={vaccineGameImg}
+                alt={`${project.title} screenshot`}
+                className="mb-6 w-full rounded-lg border border-border shadow-md"
+              />
               <div className="mb-4 flex flex-wrap items-center gap-3">
                 <h3 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
                   {project.title}

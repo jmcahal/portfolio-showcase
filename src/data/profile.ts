@@ -12,7 +12,7 @@ I'm especially interested in projects where technology solves real problems, imp
     "I'm a web developer who builds practical, polished digital tools with a strong interest in AI, usability, and scalable systems.",
   location: "Acworth, Georgia",
   tagline: "Thoughtful software. Clear design. Practical AI.",
-  resumeUrl: "#",
+  resumeUrl: "/resume",
   linkedinUrl: "https://www.linkedin.com/in/jmcahal/",
   githubUrl: "https://github.com/jmcahal",
   email: "michael.cahal@gmail.com",

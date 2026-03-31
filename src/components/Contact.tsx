@@ -1,4 +1,5 @@
 import { FileText, Linkedin, Github, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { profile } from "@/data/profile";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeading from "@/components/SectionHeading";
@@ -19,18 +20,29 @@ const Contact = () => (
           If you're looking for someone who can build, think strategically, and bring clarity to digital products, I'd love to connect.
         </p>
         <div className="flex flex-wrap gap-3">
-          {ctaLinks.map(({ href, icon: Icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
-            >
-              <Icon size={16} />
-              {label}
-            </a>
-          ))}
+          {ctaLinks.map(({ href, icon: Icon, label }) =>
+            label === "Resume" ? (
+              <Link
+                key={label}
+                to={href}
+                className="flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
+              >
+                <Icon size={16} />
+                {label}
+              </Link>
+            ) : (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
+              >
+                <Icon size={16} />
+                {label}
+              </a>
+            )
+          )}
         </div>
       </ScrollReveal>
     </div>

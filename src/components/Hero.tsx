@@ -1,4 +1,5 @@
 import { FileText, Linkedin, Github, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { profile } from "@/data/profile";
 import ScrollReveal from "@/components/ScrollReveal";
 import avatarSvg from "@/assets/cahal3.svg";
@@ -24,18 +25,29 @@ const Hero = () => (
           {profile.headline}
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
-          {ctaLinks.map(({ href, icon: Icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-2 rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm font-medium text-foreground transition-all hover:border-primary hover:text-primary"
-            >
-              <Icon size={16} />
-              {label}
-            </a>
-          ))}
+          {ctaLinks.map(({ href, icon: Icon, label }) =>
+            label === "Resume" ? (
+              <Link
+                key={label}
+                to={href}
+                className="group flex items-center gap-2 rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm font-medium text-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                <Icon size={16} />
+                {label}
+              </Link>
+            ) : (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm font-medium text-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                <Icon size={16} />
+                {label}
+              </a>
+            )
+          )}
         </div>
       </ScrollReveal>
       <ScrollReveal className="shrink-0">

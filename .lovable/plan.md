@@ -1,18 +1,24 @@
 
 
-# Add Resume PDF with Dedicated Resume Page
+# Resume Page — Inline Content Display
 
-## Steps
+## What
+Replace the current minimal Resume page with a full readable resume layout, styled to match the dark portfolio theme. Keep the download button and back link.
 
-1. **Copy PDF to public folder**: `user-uploads://cahal-consulting-resume-march_1.pdf` → `public/resume.pdf`
+## Content to Render
+Extracted from the PDF:
 
-2. **Create `src/pages/Resume.tsx`**: A lightweight page matching the dark site theme with:
-   - A centered card showing "Michael Cahal — Resume"
-   - A download link/button pointing to `/resume.pdf`
-   - A "← Back to Portfolio" link to `/`
-   - Uses the same dark background, accent color, and typography as the main site
+- **Header**: James Michael Cahal, Atlanta GA, email, phone, LinkedIn, GitHub
+- **Summary**: AI-focused product and technology professional paragraph
+- **Core Capabilities**: 4 grouped categories (AI Strategy, Product & Consulting, Technical Execution, Leadership)
+- **Professional Experience**: KSU role with bullet points + Leadership subsection
+- **Selected AI Projects**: 3 projects (Nonprofit Hackathon, RAG Chatbot, Copilot Studio)
+- **Previous Experience**: Springboard Fellow, Director of Bands
+- **Education & Certifications**: 4 items
 
-3. **Add route in `src/App.tsx`**: Add `<Route path="/resume" element={<Resume />} />` above the catch-all
+## Layout
+Single-column, max-width ~768px, left-aligned text. Each section gets a heading with the accent underline style. Download button and back link at the top. Lightweight semantic HTML — no cards or heavy components.
 
-4. **Update Resume CTA links**: Change `profile.resumeUrl` in `src/data/profile.ts` from `"#"` to `"/resume"`. Update the Resume `<a>` tags in `Hero.tsx` and `Contact.tsx` to use `<Link>` from react-router (internal navigation) instead of `target="_blank"` for the Resume button specifically.
+## Implementation
+One file change: rewrite `src/pages/Resume.tsx` with all resume content hardcoded as JSX, using Tailwind classes consistent with the site theme (`font-display`, `text-foreground`, `text-muted-foreground`, `border-primary/30`, etc.).
 

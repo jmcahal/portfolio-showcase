@@ -1,4 +1,5 @@
 import { FileText, Linkedin, Github, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { profile } from "@/data/profile";
 import ScrollReveal from "@/components/ScrollReveal";
 import avatarSvg from "@/assets/cahal3.svg";

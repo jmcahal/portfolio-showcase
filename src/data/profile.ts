@@ -13,7 +13,7 @@ I'm especially interested in projects where technology solves real problems, imp
   location: "Acworth, Georgia",
   tagline: "Thoughtful software. Clear design. Practical AI.",
   resumeUrl: "#",
-  linkedinUrl: "#",
-  githubUrl: "#",
-  email: "#",
+  linkedinUrl: "https://www.linkedin.com/in/jmcahal/",
+  githubUrl: "https://github.com/jmcahal",
+  email: "michael.cahal@gmail.com",
 };

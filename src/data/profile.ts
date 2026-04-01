@@ -10,7 +10,7 @@ export const profile: SiteProfile = {
 I'm especially interested in projects where technology solves real problems, improves clarity, or creates better experiences for the people using it. I care about strong structure, clean design, accessibility, and tools that feel intentional.`,
   shortAbout:
     "I'm a web developer who builds practical, polished digital tools with a strong interest in AI, usability, and scalable systems.",
-  location: "Acworth, Georgia",
+  location: "Atlanta, Georgia",
   tagline: "Thoughtful software. Clear design. Practical AI.",
   resumeUrl: "/resume",
   linkedinUrl: "https://www.linkedin.com/in/jmcahal/",

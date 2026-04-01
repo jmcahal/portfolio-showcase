@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, Download } from "lucide-react";
 
+const resumePdfUrl = `${import.meta.env.BASE_URL}resume.pdf`;
+
 const SectionTitle = ({ children }: { children: string }) => (
   <div className="mt-12 mb-4">
     <h2 className="font-display text-xl font-bold tracking-tight text-foreground">
@@ -23,7 +25,7 @@ const Resume = () => (
           Back to Portfolio
         </Link>
         <a
-          href="/resume.pdf"
+          href={resumePdfUrl}
           download
           className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
         >
